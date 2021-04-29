@@ -1,5 +1,9 @@
 # Changelog
 
+## In development
+
+- Fix PyPI classifiers.
+
 ## [0.6.0] - 2021-04-26
 
 - Add support for floating labels on input types `date`, `time`, `url`, `email`, `tel`.

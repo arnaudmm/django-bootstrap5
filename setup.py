@@ -13,7 +13,7 @@ README = (HERE / "README.md").read_text()
 setup(
     name="django-bootstrap5",
     zip_safe=False,
-    version="0.6.0",
+    version="0.7.0dev",
     description="Bootstrap 5 for Django",
     long_description=README,
     long_description_content_type="text/markdown",
