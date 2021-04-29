@@ -1,8 +1,8 @@
 # Changelog
 
-## In development
+## [1.0.0] - In development
 
-- Fix PyPI classifiers.
+- Set PyPI classifier for Development Status to Production/Stable.
 
 ## [0.6.0] - 2021-04-26
 
