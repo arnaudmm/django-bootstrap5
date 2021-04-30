@@ -491,6 +491,15 @@ class FieldRenderer(BaseRenderer):
                 field=field,
             )
 
+        addon_before = (
+            format_html('<span class="input-group-text">{}</span>', self.addon_before) if self.addon_before else ""
+        )
+        addon_after = (
+            format_html('<span class="input-group-text">{}</span>', self.addon_after) if self.addon_after else ""
+        )
+        if addon_before or addon_after:
+            field = format_html('<div class="input-group mb-3">{}{}{}</div>', addon_before, field, addon_after)
+
         field_with_help_and_errors = format_html("{}{}{}", field, self.get_help_html(), self.get_errors_html())
         if self.is_horizontal:
             field_with_help_and_errors = format_html(
